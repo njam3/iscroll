@@ -1762,8 +1762,7 @@ Indicator.prototype = {
 		newX = this.x + deltaX;
 		newY = this.y + deltaY;
 
-		// this._pos(newX, newY);
-		this.scroller.scrollTo(-newX, -newY, this.scroller.options.scrollbarDuration || 0, this.scroller.options.scrollbarEase);
+		this._pos(newX, newY);
 
 // INSERT POINT: indicator._move
 
